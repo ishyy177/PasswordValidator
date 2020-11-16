@@ -49,7 +49,7 @@ public class passwordValidation {
                     hasspecialchara = true;
                 } else {
                     try {
-                        // create a constructor exception
+                        // throw an exception
                         throw new invalidCharacters(password.substring(i, i + 1));
                     } catch (invalidCharacters e) {
                         System.out.println(e.toString());
@@ -57,7 +57,7 @@ public class passwordValidation {
                 }
             }
 
-            // if the each one is not true then throw an exception
+            // if each one is not true then throw an exception
             // try catch block
 
             try {
